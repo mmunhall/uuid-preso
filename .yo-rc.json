@@ -1,0 +1,11 @@
+{
+  "generator-reveal": {
+    "presentationTitle": "UUID and U",
+    "packageVersion": "0.0.1",
+    "revealTheme": "sky",
+    "useSass": false,
+    "deployToGithubPages": true,
+    "githubUsername": "mmunhall",
+    "githubRepository": "https://github.com/mmunhall/uuid-preso"
+  }
+}
