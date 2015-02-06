@@ -8,6 +8,14 @@ Define UUID
 Differences between UUID and GUID
 Tim's defintion of GUID (and UUID)
 
+Oracle
+------
+
+There is no UUID type, but you can store a 128-bit value as RAW(16).
+    SYS_GUID()
+    rawtohex()
+    hextoraw()
+
 JAVA
 ----
 
@@ -16,14 +24,6 @@ java.util.UUID
     .nameUUIDFromBytes(byte[] name)
     .randomUUID()
     .toString()
-
-Oracle
-------
-
-There is no UUID type, but you can store a 128-bit value as RAW(16).
-    SYS_GUID()
-    rawtohex()
-    hextoraw()
 
 DBUnit
 ------
