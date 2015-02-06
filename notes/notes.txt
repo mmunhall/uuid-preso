@@ -1,0 +1,54 @@
+Definition
+----------
+
+Define UUID
+    Uniqueness
+    Format
+    Variants
+Differences between UUID and GUID
+Tim's defintion of GUID (and UUID)
+
+JAVA
+----
+
+java.util.UUID
+    .fromString(String name)
+    .nameUUIDFromBytes(byte[] name)
+    .randomUUID()
+    .toString()
+
+Oracle
+------
+
+There is no UUID type, but you can store a 128-bit value as RAW(16).
+    SYS_GUID()
+    rawtohex()
+    hextoraw()
+
+DBUnit
+------
+
+UUIDs are represented using a special syntax:
+
+    <TABLE_NAME COL_NAME="uuid'00000000-0000-0000-0000-000000000000'" />
+
+Database Persistence Options
+----------------------------
+
+1) The Poor Man's Solution: Store value as a 36-character string (old school)
+
+Pros: Simple
+Cons: Feels dirty
+
+2) Store as an actual 128-bit value
+
+Pros: Matches the domain model
+Cons: Not simple
+
+Database Schema
+---------------
+CREATE TABLE PEOPLE (
+    ID RAW(16) PRIMARY KEY DEFAULT SYS_GUID()
+    FIRST_NAME VARCHAR2(64) NOT NULL,
+    LAST_NAME VARCHAR2(64) NOT NULL
+)
