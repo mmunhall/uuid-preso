@@ -1,1 +1,16 @@
-["index.md"]
+[
+    [
+        {
+            "filename": "index.html",
+            "attr": {
+                "data-background": "images/depression.jpg"
+            }
+        },
+        {
+            "filename": "round-trippin-on-guids.html",
+            "attr": {
+                "data-background": "images/trippin.jpg"
+            }
+        }
+    ]
+]
