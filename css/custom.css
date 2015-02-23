@@ -8,3 +8,18 @@
     font-weight: bold;
     -webkit-text-stroke: 2px #000;
 }
+
+.reveal p.example {
+    background-color: #ccc;
+    color: #333;
+    text-shadow: -1px 1px #fff;
+}
+
+.reveal p.gimmespacebro {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.reveal sup {
+    font-size: .65em;
+}
