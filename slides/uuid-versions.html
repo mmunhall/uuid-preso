@@ -1,0 +1,26 @@
+<h2>UUID Versions</h2>
+
+<p class="gimmespacebro example">xxxxxxxx-xxxx-<em>M</em>xxx-<em>N</em>xxx-xxxxxxxxxxxx</p>
+
+<ol>
+    <li>MAC address &amp; datetime</li>
+    <li>DCE security</li>
+    <li>MD5 hash &amp; namespace</li>
+    <li>Random</li>
+    <li>SHA1 hash &amp; namepsace</li>
+</ol>
+
+<aside class="notes">
+    <ul>
+        <li>Most important to remember that ANY version will work for our purposes, but the higher the version the better.</li>
+        <li>
+            <ol>
+                <li>MAC address and number of 100 nanosecond intervals since the adoption of the Gregorian calendar. This version is not "sufficiently opaque".</li>
+                <li>Version 1 with some bytes replaced with a POSIX UID or other identifier</li>
+                <li>"Named UUID": MD5 hash from a URL, FQDN, some other object</li>
+                <li>"Random UUID": Derived from random numbers</li>
+                <li>Same as version 3, but uses SHA-1 because MD5 has been compromised</li>
+            </ol>
+        </li>
+    </ul>
+</aside>
