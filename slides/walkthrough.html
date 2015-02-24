@@ -1,0 +1,14 @@
+<h2>Walkthrough</h2>
+
+<code><pre>create user uuid identified by uuid;
+grant create session, connect, resource to uuid;
+
+CREATE TABLE uuid.PEOPLE (
+    ID RAW(16) DEFAULT SYS_GUID(),
+    FIRST_NAME VARCHAR2(64) NOT NULL,
+    LAST_NAME VARCHAR2(64) NOT NULL
+);
+
+ALTER TABLE uuid.PEOPLE
+ADD CONSTRAINT pk_id
+PRIMARY KEY (ID);</pre></code>

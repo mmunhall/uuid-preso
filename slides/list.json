@@ -23,5 +23,12 @@
     "oracle-and-uuid-functions.html",
     "java-and-uuid.html",
     "javautiluuid.html",
-    "uuid-and-dbunit.html"
+    "uuid-and-dbunit.html",
+    "walkthrough.html",
+    {
+        "filename": "yay.html",
+        "attr": {
+            "data-background": "images/happypeople.jpg"
+        }
+    }
 ]
