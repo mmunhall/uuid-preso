@@ -23,3 +23,7 @@
 .reveal sup {
     font-size: .65em;
 }
+
+.reveal .nouppercase {
+    text-transform: none;
+}
