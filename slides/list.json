@@ -17,5 +17,7 @@
     "uuid-defined.html",
     "how-unique-is-it.html",
     "uuid-variants.html",
-    "uuid-versions.html"
+    "uuid-versions.html",
+    "oracle-and-uuid.html",
+    "oracle-and-uuid-functions.html"
 ]

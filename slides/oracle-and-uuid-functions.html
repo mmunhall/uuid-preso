@@ -1,0 +1,14 @@
+<h2>Oracle UUID Functions</h2>
+
+<ul>
+    <li><b>SYS_GUID()</b>: Generate a new, unique 128-bit value</li>
+    <li><b>RAWTOHEX()</b>: Convert binary to hexidecimal digits</li>
+    <li><b>HEXTORAW()</b>: Convert hexidecimal digits to binary</li>
+</ul>
+
+<aside class="notes">
+    <ul>
+        <li>SYS_GUID() returns a RAW(16), not a GUID!</li>
+        <li>Cannot compare hex to raw. Use rawtohex() or hextoraw() first.</li>
+    </ul>
+</aside>

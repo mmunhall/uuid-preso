@@ -1,0 +1,16 @@
+<h2>Oracle and UUID</h2>
+
+<ul>
+    <li>No native UUID datatype</li>
+    <li>Values are stored as RAW(16)</li>
+    <li>Not compliant with UUID spec</li>
+    <li>Unique</li>
+    <li>Sequential</li>
+</ul>
+
+<aside class="notes">
+    <ul>
+        <li>RAW(16) == 128 bits</li>
+        <li>Cannot tell how UUID is generated, but behaves like version 1 (sequential, looks different on different machines)</li>
+    </ul>
+</aside>
