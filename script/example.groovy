@@ -32,9 +32,11 @@ println "Person object: ${person}"
 person.firstName = "Bobbie"
 person.lastName = "Tables"
 
-// FAIL (UUID is not a SQL type): sql.executeUpdate("update people set first_name = ? where id = hextoraw('?')", [person.firstName, person.id])
-// FAIL (Not valid hex): sql.executeUpdate("update people set first_name = ? where id = hextoraw(?)", [person.firstName, person.id.toString()])
+// FAIL: sql.executeUpdate("update people set first_name = ? where id = ?", [person.firstName, person.id])
+// FAIL: sql.executeUpdate("update people set first_name = ? where id = hextoraw(?)", [person.firstName, person.id])
 sql.executeUpdate("update people set first_name = ? where id = hextoraw(?)", [person.firstName, uuidToHex(person.id)])
+
+
 
 
 
