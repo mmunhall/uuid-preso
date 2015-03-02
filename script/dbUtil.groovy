@@ -3,7 +3,6 @@
 
 
 @Grapes([
-    @Grab(group="com.google.guava", module="guava", version="18.0"),
     @Grab(group='com.oracle', module='ojdbc6', version='11.2.0.2.0'),
     @GrabConfig(systemClassLoader=true)
 ])
