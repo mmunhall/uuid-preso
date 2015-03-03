@@ -30,7 +30,6 @@ println "Person object: ${person}"
 
 // UPDATE:
 person.firstName = "Bobbie"
-person.lastName = "Tables"
 
 // FAIL: sql.executeUpdate("update people set first_name = ? where id = ?", [person.firstName, person.id])
 // FAIL: sql.executeUpdate("update people set first_name = ? where id = hextoraw(?)", [person.firstName, person.id])
