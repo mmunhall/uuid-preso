@@ -46,6 +46,19 @@ Cons: Feels dirty
 Pros: Matches the domain model
 Cons: Not simple
 
+Flow
+----
+
+###Oracle -> Java
+
+raw -> hex -> string -> java.util.UUID
+RAW(16) -> rawtohex() -> string replace -> formString()
+
+###Java -> Oracle
+
+UUID -> string -> hex -> raw
+java.util.UUID -> toString() -> string replace -> hextoraw()
+
 Database Schema
 ---------------
 create user uuid identified by uuid;
