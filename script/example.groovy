@@ -29,7 +29,7 @@ def person = new Person(id: hexToUuid(rows[0].idAsHex), firstName: rows[0].first
 println "Person object: ${person}"
 
 // UPDATE:
-person.firstName = "Bobbie"
+person.firstName = "Robert"
 
 // FAIL: sql.executeUpdate("update people set first_name = ? where id = ?", [person.firstName, person.id])
 // FAIL: sql.executeUpdate("update people set first_name = ? where id = hextoraw(?)", [person.firstName, person.id])
